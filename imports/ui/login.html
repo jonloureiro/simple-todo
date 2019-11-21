@@ -1,0 +1,38 @@
+<template name="login">
+  {{#if isRegister}}
+    <h2>Registrar</h2>
+  {{else}}
+    <h2>Login</h2>
+  {{/if}}
+
+
+  <form class="form-entrar">
+    <label for="email">Email</label><br>
+    <input type="email" name="email" required placeholder="Digite seu e-mail">
+
+    <br><br>
+
+    <label for="password">Senha</label><br>
+    <input type="password" name="password" required placeholder="Digite sua senha">
+
+    <br><br>
+
+    {{#if isRegister}}
+      <label for="password2">Confirmação de senha</label><br>
+      <input type="password" name="password2" required placeholder="Confirme sua senha">
+
+      <br><br>
+    {{/if}}
+
+
+    {{#if isRegister}}
+      <a href="" class="alternar-login-registro">Já tem uma conta, então faça login!</a>
+    {{else}}
+      <a href="" class="alternar-login-registro">Não tem uma conta, registre-se!</a>
+    {{/if}}
+
+    <br><br>
+
+    <button>Entrar</button>
+  </form>
+</template>
