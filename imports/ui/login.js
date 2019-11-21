@@ -14,6 +14,8 @@ Template.login.helpers({
     const instance = Template.instance();
     return instance.isRegister.get();
   }
+
+
 })
 
 Template.login.events({
